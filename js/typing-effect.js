@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-//--------------------typing effect-------------------//
 
 //Want more typing functionality? Visit typeitjs.com for easy options and controls.
 
