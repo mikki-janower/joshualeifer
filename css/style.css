@@ -1,0 +1,365 @@
+
+html{
+  background-color:hsl(0, 0%, 95%);
+  max-width:100vw;
+  font-family: "Times New Roman";
+}
+::selection{
+  background-color:yellow;
+}
+#header{
+  position:absolute;
+  left:20px;
+  top:-30px;
+}
+#header h1{
+  width: 80vw;
+}
+.visited{
+  color:purple;
+  border-bottom:2.5px solid purple;
+}
+h1{
+  font-size:3.6em;
+  line-height:1.15;
+  font-weight:normal;
+  letter-spacing:-.8px;
+  word-spacing:.5px;
+}
+a{
+  color:blue;
+  line-height:.9;
+  display:inline-block;
+  transition:.2s;
+  text-decoration:none;
+  border-bottom: 2.5px solid blue;
+}
+.name{
+  cursor:pointer;
+  border-radius:30px;
+  transition: .3s;
+}
+.name:hover{
+  background-color:yellow;
+  -webkit-box-shadow: 0px -1px 12px 8px yellow;
+  -moz-box-shadow: 0px -1px 12px 8px yellow;
+  box-shadow: 0px -1px 12px 8px yellow;
+}
+.link{
+  cursor:pointer;
+  line-height:.9;
+  display:inline-block;
+  transition:color .2s;
+}
+.link:hover, .link:active{
+  color:blue;
+  border-bottom: 2.5px solid blue;
+}
+.link:visited{
+  color:purple;
+  border-bottom: 2.5px solid purple;
+}
+#whatever{
+  position:absolute;
+  height:auto;
+  left: 20px;
+  bottom:20px;
+  word-spacing:.5px;
+  font-size:3.6em;
+  letter-spacing:-.9px;
+}
+#bottom h1{
+  max-width:3em;
+  transition:.2s;
+  border-radius:10px;
+}
+.navname{
+  cursor:pointer;
+  border-bottom:2.5px solid transparent;
+}
+
+
+/*-------------------------selected writing and translation pages styling--------------*/
+#sections{
+  left:0;
+  width:100vw;
+  position:absolute;
+  position:absolute;
+  margin-top:100vh;
+}
+#sectionHead{
+  padding-top:20px;
+  padding-left:20px;
+  display:grid;
+  grid-template-columns:66% 33%;
+  padding-bottom:30px;
+  /*border-bottom:.5px solid hsl(0, 0%, 65%); */
+  grid-column-gap:20px;
+  padding-right:20px;
+  max-width:100%;
+  font-size:3.6em;
+  line-height: .9;
+  letter-spacing:-.9px;
+  word-spacing:.5px;
+}
+#sectionContent{
+  display:grid;
+  width:100%;
+  font-size:1.4em;
+  margin-bottom:50px;
+}
+#key{
+  transition:.1s;
+  font-size:1.4em;
+  line-height:.9;
+}
+.listing{
+  margin-left:20px;
+  margin-right:20px;
+  /*padding-left:20px;
+   padding-right:20px;*/
+  display:grid;
+ border-bottom:.5px solid hsl(0, 0%, 55%); 
+  grid-template-columns: 30px 66fr 18fr 15fr;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+.title{
+  display:block;
+  padding-right:20px;
+  padding-bottom:10px;
+}
+.title a{
+  line-height:1.2;
+  color:black;
+  border-bottom:none;
+  transition:.2s;
+  /*border-bottom:2px solid transparent;*/
+}
+#publication{
+  font-style:italic;
+}
+#year{
+  text-align: right;
+  align-content:right;
+}
+#sectionBottom{
+  padding-bottom:60px;
+  padding-left:20px;
+  display:flex;
+  justify-content:space-between;
+  max-width:100%;
+  padding-right:20px;
+  font-size:3.6em;
+  line-height: .9;
+  letter-spacing:-.9px;
+  word-spacing:.5px;
+}
+#sectionBottom span{
+  line-height:.9;
+  color:blue;
+  border-bottom:2.5px solid blue;
+}
+
+/*-------------------------about page styling--------------*/
+#about{
+  background-color: hsl(0, 0%, 95%);
+  position:absolute;
+  z-index:100;
+  width:50vw;
+  top:100px;
+  right:20px;
+  margin-bottom:20px;
+  border:2px solid black;
+  margin:16px;
+  border-radius:10px;
+  cursor:move;
+  box-shadow: 8px 10px 8px 2px rgba(0, 0, 0, 0.24);
+}
+/*#sectionHead div{
+    cursor:pointer;
+    color:blue;
+    line-height:.9;
+    border-bottom: 2.5px solid blue;
+}*/
+
+.toprow{
+  font-family:Arial;
+  font-size:1.5em;
+  border-bottom:2px solid black;
+  display:flex;
+  flex-direction:row;
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px;
+  transition:background-color;
+  transition-duration:.4s;
+}
+.toprow span:first-of-type{
+  cursor:pointer;
+  margin-right:6px;
+  padding-left:20px;
+  padding-right:20px;
+  border-right:2px solid black;
+  vertical-align:center;
+}
+.toprow span:nth-of-type(2){
+  padding-right:10px;
+}
+.toprow span{
+  padding:10px;
+}
+#about .content, #about .bottomrow{
+  font-size:1.4em;
+  padding:20px;
+  line-height:1.3;
+  margin-right:10px;
+}
+.bottomrow{
+  float:right;
+  display:flex;
+  flex-direction:row;
+}
+.bottomrow a{
+  border:1.5px solid black;
+  padding:8px;
+  padding-left:16px;
+  padding-right:16px;
+  border-radius: 20px;
+  font-family:Arial;
+  color:black;
+  margin-right:10px;
+}
+.bottomrow a:hover{
+  background-color:yellow;
+}
+
+/*-------------------------for determining media queries--------------*/
+#querytown{
+  font-size:2em;
+  color:white;
+  font-family:Arial;
+  background-color:red;
+  z-index:100;
+  position:fixed;
+  top:20px;
+  left:20px;
+}
+/*-------------------------meeeeeeeeeedia queeeeeeeeries--------------*/
+  @media (max-width: 1350px) { 
+    .toprow span:first-of-type{
+      vertical-align:center;
+      align-content:center;
+    }
+    #about{
+      top:40px;
+      width:60vw;
+    }
+}
+@media(max-width:1100px){
+  #sectionContent{
+    font-size:18px;
+  }
+}
+@media (max-width: 1150px) { 
+  #header h1{
+    width:90vw;
+  }
+}
+@media (max-width: 1000px) { 
+  #about{
+    top:140px;
+    right:40px;
+  }
+  
+}
+@media(max-width: 925px){
+/*#sectionContent{
+  grid-template-columns:50% 50%;
+}
+.listing{
+  grid-template-columns: 30px 70fr 30fr;
+  grid-template-rows:auto auto;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.title{
+  grid-row:1/span 2;
+  grid-column:2;
+  padding-bottom:0px;
+  padding-right:6px;
+}
+#publication{
+  display:flex;
+  align-self:flex-start;
+  justify-self:flex-end;
+  grid-row:2;
+  grid-column:3;
+  text-align:right;
+}
+#year{
+  grid-row:1;
+  grid-column:3;
+}*/
+
+}
+@media (max-width: 900px) { 
+  #about{
+    top:160px;
+    width:60vw;
+  }
+}
+@media (max-width: 800px) { 
+  h1, #whatever, #sectionHead{
+    font-size:2.5em;
+  }
+  #header{
+    top:-20px;
+  }
+  #about{
+    width:85vw;
+    font-size:14px;
+    top:120px;
+    right:50%;
+    transform:translateX(50%);
+  }
+}
+@media (max-width: 700px) { 
+  h1, #whatever{
+    font-size:2.5em;
+  }
+  #header{
+    width:98vw;
+  }
+  #about{
+    cursor:default;
+    width:95%;
+    right:48%;
+  }
+  #key{
+    display:none;
+  }
+  #sectionHead span:nth-of-type(2){
+    text-align:right;
+    padding-right:16px;
+  }
+  .listing{
+    padding-top:8px;
+    grid-template-columns: 65fr 25fr 10fr;
+    padding-bottom:8px;
+  }
+  .title{
+    grid-column:1;
+    padding-bottom:0;
+  }
+  .title a:hover{
+    text-decoration:underline;
+    color:blue;
+  }
+  #year{
+    grid-column:3;
+    text-align:right;
+  }
+  #publication{
+    grid-column:2;
+  }
+}
