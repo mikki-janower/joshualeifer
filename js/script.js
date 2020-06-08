@@ -21,7 +21,7 @@ return false;
 //NOTE TO SELF: if you need more typing functionality check TypeIt docu; it has lots more options than you think! 
 
 new TypeIt("#typed", {
-  speed: 30,
+  speed: 36,
   lifeLike:true,
   waitUntilVisible: true
 })
