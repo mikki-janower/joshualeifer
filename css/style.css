@@ -422,7 +422,7 @@ a{
   grid-column-gap:10px;
 }
 }
-@media(max-width: 500px){
+@media(max-width: 550px){
   .listing{
     padding:0;
     grid-template-columns: 50fr 50fr;

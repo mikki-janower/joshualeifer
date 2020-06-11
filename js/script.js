@@ -83,7 +83,7 @@ let w = window.innerWidth;
 let citation = $('.citation');
 let year = $('.year');
 let publication = $('.publication');
-if (w < 501){
+if (w < 551){
     $('.year').css("display", "none");
     $('.publication').css("display", "none");
     //$(".citation").html("(" + pubContent + ", " + yearContent + ")");
@@ -94,7 +94,7 @@ if (w < 501){
       $(this).find(citation).html("(" + pubContent + ", " + yearContent + ")");
     });
     
-} else if (w >= 501) {
+} else if (w >= 551) {
   $('.year').css("display", "inherit");
   $('.publication').css("display", "inherit");
   $(".citation").html("");
