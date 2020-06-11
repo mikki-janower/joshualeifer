@@ -324,8 +324,12 @@ a{
   h1, #whatever{
     font-size:2.5em;
   }
+  #whatever{
+    left:10px;
+  }
   #header{
     width:98vw;
+    left:10px;
   }
   #about{
     cursor:default;
