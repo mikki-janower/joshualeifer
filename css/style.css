@@ -385,5 +385,13 @@ a{
   grid-column: 2/span 3;
   text-align:right;
 }
-
+#about{
+  width:100vw;
+  left:0px;
+  right:0%;
+  top:0px;
+  margin:0px;
+  border-radius:0;
+  transform:none;
+}
 }
