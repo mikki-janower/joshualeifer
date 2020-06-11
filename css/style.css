@@ -432,10 +432,11 @@ a{
     border-bottom:1px solid black;
   }
   .title{
-    grid-column: 1/span 2;
+    font-size:1.2em;
+    grid-column: 2;
     grid-row:1;
   }
-  .title a{
-    font-size:1.3em;
+  .citation{
+    font-size:1.2rem;
   }
 }
