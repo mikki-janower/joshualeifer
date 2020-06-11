@@ -93,7 +93,6 @@ a{
   display:grid;
   grid-template-columns:66% 33%;
   padding-bottom:30px;
-  /*border-bottom:.5px solid hsl(0, 0%, 65%); */
   grid-column-gap:20px;
   padding-right:20px;
   max-width:100%;
@@ -116,8 +115,6 @@ a{
 .listing{
   margin-left:20px;
   margin-right:20px;
-  /*padding-left:20px;
-   padding-right:20px;*/
   display:grid;
  border-bottom:.5px solid hsl(0, 0%, 55%); 
   grid-template-columns: 30px 66fr 18fr 15fr;
@@ -338,13 +335,19 @@ a{
   #key{
     display:none;
   }
+  #sectionHead{
+    padding-left:10px;
+    padding-right:15px;
+  }
   #sectionHead span:nth-of-type(2){
     text-align:right;
     padding-right:16px;
   }
   .listing{
+    margin-left:10px;
+    margin-right: 15px;
     padding-top:8px;
-    grid-template-columns: 65fr 25fr 10fr;
+    grid-template-columns: 63fr 25fr 12fr;
     padding-bottom:8px;
   }
   .title{
