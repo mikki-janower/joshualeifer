@@ -393,6 +393,8 @@ a{
 }
 #about{
   width:100vw;
+  border-left:none;
+  border-right:none;
   left:0px;
   right:0%;
   top:0px;
