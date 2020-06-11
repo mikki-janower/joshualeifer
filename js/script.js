@@ -100,6 +100,7 @@ if (w < 551){
   $(".citation").html("");
 }
 }
+mobileListing();
 
 //-------------------------------------------make about section draggable
 $( "#about" ).draggable({
@@ -119,7 +120,6 @@ $(window).on("resize", function(){
 });
 
 $(window).on("load", function(){
-  mobileListing();
   let w = window.innerWidth;
    if (w > 700) {
     $( "#about" ).draggable({
