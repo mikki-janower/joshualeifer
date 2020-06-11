@@ -72,12 +72,42 @@ $("#about").on("mouseout", function(){
   $(".toprow").css("background-color"," hsl(0, 0%, 95%)");
 }); */
 
+//---------------------------format listings on mobile more like citations
+
+const mobileListing = function(){
+let w = window.innerWidth;
+
+
+//--------------style year and publication info for each listing
+
+let citation = $('.citation');
+let year = $('.year');
+let publication = $('.publication');
+if (w < 501){
+    $('.year').css("display", "none");
+    $('.publication').css("display", "none");
+    //$(".citation").html("(" + pubContent + ", " + yearContent + ")");
+    $(".listing").each(function(){
+      //--------------get year and publication info for each listing
+    let yearContent = $(this).find(year).html();
+    let pubContent = $(this).find(publication).html();
+      $(this).find(citation).html("(" + pubContent + ", " + yearContent + ")");
+    });
+    
+} else if (w >= 501) {
+  $('.year').css("display", "inherit");
+  $('.publication').css("display", "inherit");
+  $(".citation").html("");
+}
+}
+
 //-------------------------------------------make about section draggable
 $( "#about" ).draggable({
   scroll: false
 });
 
 $(window).on("resize", function(){
+  mobileListing();
   let w = window.innerWidth;
   if (w<700){
     $( "#about" ).draggable("destroy");
@@ -89,6 +119,7 @@ $(window).on("resize", function(){
 });
 
 $(window).on("load", function(){
+  mobileListing();
   let w = window.innerWidth;
    if (w > 700) {
     $( "#about" ).draggable({

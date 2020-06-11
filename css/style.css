@@ -125,17 +125,21 @@ a{
   display:block;
   padding-right:20px;
   padding-bottom:10px;
+  color:black;
+  border-bottom:none;
+  transition:.2s;
 }
 .title a{
   line-height:1.2;
   color:black;
   border-bottom:none;
   transition:.2s;
+  padding-right:2px;
 }
-#publication{
+.publication{
   font-style:italic;
 }
-#year{
+.year{
   text-align: right;
   align-content:right;
 }
@@ -155,6 +159,12 @@ a{
   line-height:.9;
   color:blue;
   border-bottom:2.5px solid blue;
+}
+.citation{
+  font-family:Arial;
+  font-size: 1.2em;
+  display:inline-block;
+  white-space:nowrap;
 }
 
 /*-------------------------about page styling--------------*/
@@ -355,11 +365,11 @@ a{
     text-decoration:underline;
     color:blue;
   }
-  #year{
+  .year{
     grid-column:3;
     text-align:right;
   }
-  #publication{
+  .publication{
     grid-column:2;
   }
 }
@@ -375,8 +385,14 @@ a{
 }
 .title a{
   line-height:1.2;
+  text-decoration:none;
+  color:black;
 }
-#year{
+.title a:hover{
+  text-decoration:underline;
+  color:blue;
+}
+.year{
   grid-row:2;
   grid-column: 2/span 3;
   font-family:Arial;
@@ -385,7 +401,7 @@ a{
   padding-top:10px;
   font-size:2em;
 }
-#publication{
+.publication{
   padding-top:10px;
   font-family: Arial;
   grid-column: 2/span 3;
@@ -405,4 +421,17 @@ a{
 #sectionHead{
   grid-column-gap:10px;
 }
+}
+@media(max-width: 500px){
+  .listing{
+    padding:0;
+    grid-template-columns: 50fr 50fr;
+  }
+  .title{
+    grid-column: 1/span 2;
+    grid-row:1;
+  }
+  .title a{
+    font-size:1.4em;
+  }
 }
