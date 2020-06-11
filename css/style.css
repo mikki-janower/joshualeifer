@@ -366,7 +366,7 @@ a{
 @media (max-width: 600px) { 
 .listing{
   padding:0;
-  grid-template-columns: 65fr 35fr;
+  grid-template-columns: 70fr 30fr;
 }
 .title{
   padding-top:10px;
