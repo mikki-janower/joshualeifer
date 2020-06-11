@@ -122,19 +122,21 @@ a{
   padding-bottom:0px;
 }
 .title{
-  display:block;
-  padding-right:20px;
+  white-space:pre-wrap;
+  padding-right:14px;
   padding-bottom:10px;
   color:black;
   border-bottom:none;
   transition:.2s;
 }
 .title a{
+  white-space:pre-wrap;
+  display:inline;
   line-height:1.2;
   color:black;
   border-bottom:none;
   transition:.2s;
-  padding-right:2px;
+  padding-right:6px;
 }
 .publication{
   font-style:italic;
@@ -161,10 +163,9 @@ a{
   border-bottom:2.5px solid blue;
 }
 .citation{
-  font-family:Arial;
-  font-size: 1.2em;
   display:inline-block;
-  white-space:nowrap;
+  font-family:Arial;
+  font-size: 1.25em;
 }
 
 /*-------------------------about page styling--------------*/
@@ -201,6 +202,7 @@ a{
   padding-right:20px;
   border-right:2px solid black;
   vertical-align:center;
+  text-align:center;
 }
 .toprow span:nth-of-type(2){
   padding-right:10px;
@@ -379,6 +381,7 @@ a{
   grid-template-columns: 70fr 30fr;
 }
 .title{
+  display:block;
   padding-top:10px;
   padding-bottom:10px;
   grid-row:1/span 2;
@@ -425,7 +428,8 @@ a{
 @media(max-width: 550px){
   .listing{
     padding:0;
-    grid-template-columns: 50fr 50fr;
+    grid-template-columns: 90fr;
+    border-bottom:1px solid black;
   }
   .title{
     grid-column: 1/span 2;

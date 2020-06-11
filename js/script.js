@@ -91,7 +91,7 @@ if (w < 551){
       //--------------get year and publication info for each listing
     let yearContent = $(this).find(year).html();
     let pubContent = $(this).find(publication).html();
-      $(this).find(citation).html("(" + pubContent + ", " + yearContent + ")");
+      $(this).find(citation).html("(<i>" + pubContent + "</i>, " + yearContent + ")");
     });
     
 } else if (w >= 551) {
