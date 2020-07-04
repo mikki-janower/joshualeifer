@@ -168,6 +168,15 @@ a{
   font-size: 1.25em;
 }
 
+.requests{
+  padding-left: 20px;
+  margin-top:20px;
+  position:absolute;
+  display:block;
+  bottom:10px; 
+  font-family:Arial; 
+  font-size:1.5rem;
+}
 /*-------------------------about page styling--------------*/
 #about{
   background-color: hsl(0, 0%, 95%);
@@ -375,6 +384,10 @@ a{
   .publication{
     grid-column:2;
   }
+  .requests{
+    padding-left:10px;
+    position:relative;
+  }
 }
 @media (max-width: 600px) { 
 .listing{
@@ -435,7 +448,7 @@ a{
   }
   .title{
     font-size:1.2em;
-    grid-column: 2;
+    grid-column: 1;
     grid-row:1;
   }
   .citation{
