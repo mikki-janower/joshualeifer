@@ -8,9 +8,9 @@ new TypeIt("#typed", {
     lifeLike:true,
     waitUntilVisible: true
   })
-  .type('<a href="https://jewishcurrents.org/author/joshua-leifer/" target="_blank">Jewish Currents</a>. ', {delay: 100})
+  .type('<a href="https://jewishcurrents.org/author/joshua-leifer/" target="_blank">Jewish Currents.</a> ', {delay: 100})
   .pause(700)
-  .type(' His work has also appeared in <a href="https://www.theguardian.com/profile/joshua-leifer" target="_blank">The Guardian</a>, <a href="https://www.thenation.com/authors/joshua-leifer/" target="_blank">The Nation</a>, <a href="https://nplusonemag.com/authors/leiferjoshua/" target="_blank">n+1</a>, <a href="https://www.972mag.com/writer/joshl/" target="_blank">+972 Magazine</a>, <a href="https://www.dissentmagazine.org/author/joshua-leifer" target="_blank">Dissent</a>, <a href="https://www.jacobinmag.com/author/joshua-leifer" target="_blank">Jacobin</a>, <a href="https://thebaffler.com/authors/joshua-leifer" target="_blank">The Baffler</a>, <a href="https://www.haaretz.com/misc/writers/WRITER-1.6855413" target="_blank">Haaretz</a>, and elsewhere.')
+  .type(' His work has also appeared in <a href="https://www.theguardian.com/profile/joshua-leifer" target="_blank">The Guardian,</a> <a href="https://www.thenation.com/authors/joshua-leifer/" target="_blank">The Nation,</a> <a href="https://nplusonemag.com/authors/leiferjoshua/" target="_blank">n+1,</a> <a href="https://www.972mag.com/writer/joshl/" target="_blank">+972 Magazine,</a> <a href="https://www.dissentmagazine.org/author/joshua-leifer" target="_blank">Dissent,</a> <a href="https://www.jacobinmag.com/author/joshua-leifer" target="_blank">Jacobin,</a> <a href="https://thebaffler.com/authors/joshua-leifer" target="_blank">The Baffler,</a> <a href="https://www.haaretz.com/misc/writers/WRITER-1.6855413" target="_blank">Haaretz,</a> and elsewhere.')
   .go();
 
   
